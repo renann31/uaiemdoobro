@@ -1,9 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700", "900"], // escolha os pesos que você usa
 });
 
 const geistMono = Geist_Mono({
@@ -20,9 +22,12 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className={`${montserrat.className} min-h-full flex flex-col`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
