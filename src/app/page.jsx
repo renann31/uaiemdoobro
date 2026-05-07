@@ -1,4 +1,4 @@
-/* "use client" */
+"use client"; 
 import AppSection from "@/components/appSection";
 import ExplicandoSection from "@/components/explicandoSection";
 import Footer from "@/components/footer";
@@ -7,10 +7,12 @@ import InvestimentoSection from "@/components/investimentoSection";
 import UaiSection from "@/components/uaiSection"
 import VantagensSection from "@/components/vantagensSection.";
 import { faqHome } from "@/data/homeContent";
-/* import { useState } from "react";
- */
+import Image from "next/image";
+import { useState } from "react";
+
 export default function Home() {
   const [openIndex, setOpenIndex] = useState(false)
+
   return (
     <div className="bg-[#F9FAFB]">
       <Header />
