@@ -11,13 +11,11 @@ const Header = () => {
 
                 <div className="bg-white/10 h-53 rounded-2xl items-center text-left mt-10 pt-5 p-8 md:max-w-115.5 md:mx-auto md:h-48 md:px-15 md:pt-0">
                     <h1 className="text-[48px] font-medium text-[#FFEAB6] md:text-[64px]">menos de <span className="font-black">1 real</span> /dia</h1>
-                    <p className="text-[14px] font-light opacity-80 text-center mt-4 md:mt-0">no plano anual de R$ 358,80</p>
+                    <p className="text-[14px] font-light opacity-80 text-[#FFEAB6] text-center mt-4 md:mt-0">no plano anual de R$ 358,80</p>
                 </div>
 
-{/*                 <div className="md:w-115.5 md:justify-between">
- */}                   <button className="bg-[#F6B22B] text-black font-bold text-[18px] rounded-xl h-15 w-full mt-8 md:w-48 mr-5">Assinar agora</button>
-                    <button className="bg-[#12495E] text-white font-bold text-[18px] rounded-xl h-15 w-full mt-5 md:w-41.25">Saiba mais</button> 
-                {/* </div> */}
+                <button className="bg-[#F6B22B] text-black font-bold text-[18px] rounded-xl h-15 w-full mt-8 md:w-48 mr-5">Assinar agora</button>
+                <button className="bg-[#12495E] text-white font-bold text-[18px] rounded-xl h-15 w-full mt-5 md:w-41.25">Saiba mais</button> 
             </div>
         </div>
     )

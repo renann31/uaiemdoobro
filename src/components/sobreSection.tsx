@@ -22,8 +22,8 @@ const SobreSection = () => {
                 style={{ background: "var(--bg-linear)" }}>
                 <div className="flex flex-col justify-center gap-1">
                     <h1 className="text-[#FFEAB6] font-black text-[48px]">2x</h1>
-                    <h1 className="text-[24px] font-bold mb-1">Compre 1, Ganhe 1</h1>
-                    <p className="text-[16px] font-light ">A cada prato que você compra em um restaurante participante, você ganha outro prato de igual valor. Simples assim!</p>
+                    <h1 className="text-[#FFEAB6] text-[24px] font-bold mb-1">Compre 1, Ganhe 1</h1>
+                    <p className="text-[#FFEAB6] text-[16px] font-light ">A cada prato que você compra em um restaurante participante, você ganha outro prato de igual valor. Simples assim!</p>
                 </div>
             </div>
             <div className="bg-linear-to-br from-[#F6B22B] to-[#FFEAB6] h-67 p-5 px-10 rounded-xl mt-8 md:mt-0">

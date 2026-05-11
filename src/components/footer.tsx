@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function Footer ({ home }) {
+type FooterProps = {
+    home?: boolean;
+};
+
+function Footer({ home }: FooterProps) {
     return (
         <>
             {home &&
@@ -19,7 +23,7 @@ function Footer ({ home }) {
             </div>
         }
             <div className="bg-[#232126] h-150 md:flex md:items-center md:h-79">
-                <div className="md:flex md:w-304 md:gap-40 md:mx-auto md:items-center md:-translate-y-10 md:ml-30 2xl:ml-50 md:max-h-33.5">
+                <div className="md:flex md:w-304 md:gap-20 xl:gap-40 md:mx-auto md:items-center md:-translate-y-10 md:ml-15 lg:ml-30 2xl:ml-50 md:max-h-33.5">
 
                     <div className="flex items-center justify-center">
                         <Image
@@ -53,16 +57,6 @@ function Footer ({ home }) {
                                     className="object-contain"
                                 ></Image>
                                 <a href="https://www.instagram.com/uaiemdoobro/" className="font-light text-[16px] text-[#99A1AF] underline">@uaiemdoobro</a>
-                            </div>
-                            <div className="flex gap-1 ml-3">
-                                <Image
-                                    alt="whatsapp"
-                                    src="/assets/whatsapp.svg"
-                                    width={18}
-                                    height={18}
-                                    className="object-contain"
-                                ></Image>
-                                <a href="" className="font-light text-[16px] text-[#99A1AF]">(xx)xxxxx-xxxx</a>
                             </div>
                         </div>
                     </div>
