@@ -105,19 +105,19 @@ export const infoApp = [
       "resposta": "É muito simples! Ao apresentar seu cupom digital no app antes de fazer o pedido em um restaurante participante, você compra um prato do cardápio e ganha automaticamente outro prato de igual valor. Você paga por 1 e recebe 2!"
     },
     {
-      "pergunta": "Como funciona o 'compre 1, ganhe 1'?",
-      "resposta": "O Uai em Doobro é um tour gastronômico exclusivo das cidades Uberlândia, Araguari e Uberaba que oferece a promoção 'compre 1 prato e ganhe 1' em dezenas de restaurantes parceiros. Com uma assinatura anual acessível, você pode economizar até 50% em todas as suas refeições durante a temporada."
+      "pergunta": "O que é o Uai em Doobro?",
+      "resposta": "O Uai em Doobro é um tour gastronômico exclusivo das cidades Uberlândia, Araguari e Uberaba que oferece a promoção 'compre 1 prato e ganhe 1' em dezenas de restaurantes parceiros. Com uma assinatura anual acessível, você pode economizar  50% suas refeições durante a temporada."
     },
     {
-      "pergunta": "Como funciona o 'compre 1, ganhe 1'?",
-      "resposta": "O Uai em Doobro é um tour gastronômico exclusivo das cidades Uberlândia, Araguari e Uberaba que oferece a promoção 'compre 1 prato e ganhe 1' em dezenas de restaurantes parceiros. Com uma assinatura anual acessível, você pode economizar até 50% em todas as suas refeições durante a temporada."
+      "pergunta": "Quantas vezes posso usar o cupom?",
+      "resposta": "Você pode usar um cupom por dia em cada restaurante participante durante toda a temporada. Por exemplo: se temos 30 restaurantes no programa, você pode usar até 30 cupons em um único dia (um em cada estabelecimento). Não há limite total de uso!"
     },
     {
-      "pergunta": "Como funciona o 'compre 1, ganhe 1'?",
-      "resposta": "O Uai em Doobro é um tour gastronômico exclusivo das cidades Uberlândia, Araguari e Uberaba que oferece a promoção 'compre 1 prato e ganhe 1' em dezenas de restaurantes parceiros. Com uma assinatura anual acessível, você pode economizar até 50% em todas as suas refeições durante a temporada."
+      "pergunta": "Como funciona o aplicativo?",
+      "resposta": "O app é muito intuitivo! Nele você pode ver a lista completa de restaurantes participantes, conferir cardápios, horários de funcionamento, localização e avaliações. Para usar, basta selecionar o restaurante, ativar o cupom e apresentá-lo ao garçom antes de fazer o pedido."
     },
     {
-      "pergunta": "Como funciona o 'compre 1, ganhe 1'?",
-      "resposta": "O Uai em Doobro é um tour gastronômico exclusivo das cidades Uberlândia, Araguari e Uberaba que oferece a promoção 'compre 1 prato e ganhe 1' em dezenas de restaurantes parceiros. Com uma assinatura anual acessível, você pode economizar até 50% em todas as suas refeições durante a temporada."
+      "pergunta": "Posso cancelar e pedir reembolso?",
+      "resposta": "Sim! Oferecemos garantia de 7 dias. Se você não ficar satisfeito com o tour nos primeiros 7 dias, basta solicitar o cancelamento e faremos o reembolso integral do valor pago, sem perguntas ou burocracia.s"
     },
   ]

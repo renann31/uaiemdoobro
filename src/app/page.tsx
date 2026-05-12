@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
 import AppSection from "@/components/appSection";
 import ExplicandoSection from "@/components/explicandoSection";
 import Footer from "@/components/footer";

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AppSection = () => {
     return (
-        <div className="bg-[#F9FAFB] text-center mt-10 w-85 mx-auto md:w-288 md:mt-40">
+        <div className="bg-[#F9FAFB] text-center mt-10 w-80 mx-auto md:w-288 md:mt-40">
             <div className="md:px-70">
                 <h1 className="font-black text-[30px] text-[#232126] md:text-[48px]">
                     Tudo pelo Aplicativo
@@ -21,14 +21,15 @@ const AppSection = () => {
                             <div key={index} className="mt-10 flex">
                                 <div className={card.estilo}>
                                     <Image
-                                        height={20}
-                                        width={20}
+                                        height={18}
+                                        width={18}
                                         src={card.icon}
                                         alt="icone"
+                                        className="object-contain"
                                     />
                                 </div>
 
-                                <div className="max-w-69 md:max-w-122 text-left ml-4">
+                                <div className="max-w-65 md:max-w-122 text-left ml-4">
                                     <h1 className="font-bold text-[20px] text-[#232126]">
                                         {card.titulo}
                                     </h1>
@@ -52,11 +53,11 @@ const AppSection = () => {
                             />
 
                             <div className="text-left grid grid-cols-1 ml-2">
-                                <p className="font-bold text-[12px] text-white">
+                                <p className="font-bold text-[11px] text-white">
                                     Baixar na
                                 </p>
 
-                                <p className="font-bold text-[14px] text-white">
+                                <p className="font-bold text-[13px] text-white">
                                     App Store
                                 </p>
                             </div>
@@ -72,11 +73,11 @@ const AppSection = () => {
                             />
 
                             <div className="text-left grid grid-cols-1 ml-2">
-                                <p className="font-bold text-[12px] text-white">
+                                <p className="font-bold text-[11px] text-white">
                                     Disponível no
                                 </p>
 
-                                <p className="font-bold text-[14px] text-white">
+                                <p className="font-bold text-[13px] text-white">
                                     Google Play
                                 </p>
                             </div>

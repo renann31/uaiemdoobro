@@ -7,7 +7,7 @@ const FaqHome = () => {
 
   return (
     <>
-    <div className="w-85 md:w-224 mx-auto text-center mt-20">
+    <div className="w-75 md:w-224 mx-auto text-center mt-20">
                 <div className="mb-16 p-3">
                     <h1 className="text-black font-black text-[30px]">
                         Perguntas Frequentes

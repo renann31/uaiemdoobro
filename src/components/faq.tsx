@@ -14,7 +14,7 @@ const Faq = () => {
     const [openIndex, setOpenIndex] = useState<string | null>(null);
 
     return (
-        <div className="w-85.25 mx-auto mt-20 md:w-224">
+        <div className="w-80 mx-auto mt-20 md:w-224">
 
             {/* faq: sobre o tour */}
             <div className="mt-15">

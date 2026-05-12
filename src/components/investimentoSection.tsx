@@ -7,9 +7,11 @@ import { useState } from "react";
 const InvestimentoSection = () => {
     const [mostrarFormulario, setMostrarFormulario] = useState(false);
     const [email, setEmail] = useState("");
+    const [erroEmail, setErroEmail] = useState("");
+
 
     return (
-        <div className="w-85 mx-auto text-center mt-30 md:w-134.5">
+        <div className="w-83 mx-auto text-center mt-30 md:w-134.5">
             <div className="mb-16 p-3">
                 <h1 className="text-black font-black text-[30px] md:text-[48px]">
                     Investimento
@@ -22,7 +24,7 @@ const InvestimentoSection = () => {
 
             <div className="h-auto md:px-8 rounded-2xl border-[#F6B22B] border-4 bg-linear-to-br from-[#FFEAB6] to-[#F6B22B] shadow-[10px_10px_25px_rgba(0,0,0,0.3)] pb-10 md:min-h-201.75">
                 <div className="px-14 mb-10 mt-3 md:w-64 md:px-4 md:mx-auto">
-                    <h1 className="text-[43px] font-medium text-[#12495E]">
+                    <h1 className="text-[39px] font-medium text-[#12495E]">
                         menos de <span className="font-black">1 real</span> /dia
                     </h1>
 
@@ -39,7 +41,7 @@ const InvestimentoSection = () => {
                             return (
                                 <div
                                     key={index}
-                                    className="space-y-3 flex gap-2.5">
+                                    className="space-y-3 flex gap-2.5 pl-4">
                                     <div className="h-5.5 w-5.5 grid place-items-center">
                                         <Image
                                             className="object-contain"
@@ -50,7 +52,7 @@ const InvestimentoSection = () => {
                                         />
                                     </div>
 
-                                    <h1 className="text-[#364153] font-normal text-[14px] md:text-[16px]">
+                                    <h1 className="text-[#364153] font-normal text-[13px] md:text-[16px]">
                                         {i}
                                     </h1>
                                 </div>
@@ -66,7 +68,7 @@ const InvestimentoSection = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="DIGITE SEU EMAIL"
-                                className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                                className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                             />
                         </form>
                     </>
@@ -78,9 +80,12 @@ const InvestimentoSection = () => {
                             type="email"
                             required
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(e) => {
+                                setEmail(e.target.value);
+                                setErroEmail("");
+                            }}
                             placeholder="EMAIL"
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                         />
 
                         <input
@@ -88,19 +93,19 @@ const InvestimentoSection = () => {
                             required
                             minLength={6}
                             placeholder="SENHA"
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                         />
                         <input
                             type="text"
                             required
                             placeholder="CÓDIGO DE IDENTIFICAÇÃO"
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                         />
                         <input
                             type="text"
                             required
                             placeholder="NOME COMPLETO"
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                         />
                         <input
                             type="text"
@@ -109,7 +114,7 @@ const InvestimentoSection = () => {
                             pattern="\d{11}"
                             title="Digite um CPF válido com 11 números"
                             placeholder="CPF"
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                         />
                         <input
                             type="tel"
@@ -117,15 +122,16 @@ const InvestimentoSection = () => {
                             pattern="[0-9]{10,11}"
                             title="Digite um telefone válido"
                             placeholder="TELEFONE"
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                         />
 
                         <select
                             required
                             defaultValue=""
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2">
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2">
 
-                            <option value="" disabled>
+                            <option value="" disabled
+                                className="text-[#232126] font-bold text-[14px] bg-white/10">
                                 GÊNERO
                             </option>
 
@@ -156,28 +162,47 @@ const InvestimentoSection = () => {
                                     e.target.type = "text";
                                 }
                             }}
-                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-79.5 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
+                            className="shadow-[inset_2px_5px_5px_rgba(246,178,43,0.8),0_15px_12px_rgba(0,0,0,0.25)] text-[#232126] font-bold text-[14px] bg-white/10 w-70 h-9.5 mx-auto rounded-xl py-2 px-5 md:w-full focus:outline-none focus:border-[#F6B22B] focus:border-2"
                         />
 
                         <button
                             type="submit"
-                            className="bg-[#F6B22B] rounded-xl text-[#232126] font-bold text-[16px] h-14.25 w-78.5 mx-auto shadow-[inset_2px_5px_2px_rgba(255,255,255,0.4),0_15px_12px_rgba(0,0,0,0.25)] mt-5 md:w-full">
+                            className="bg-[#F6B22B] rounded-xl text-[#232126] font-bold text-[16px] h-14.25 w-70 mx-auto shadow-[inset_2px_5px_2px_rgba(255,255,255,0.4),0_15px_12px_rgba(0,0,0,0.25)] mt-5 md:w-full">
                             Comprar agora
                         </button>
                     </form>
                 )}
 
                 {!mostrarFormulario && (
+                    <>
                     <button
-                        onClick={() => setMostrarFormulario(true)}
-                        className="bg-[#F6B22B] rounded-xl text-[#232126] font-bold text-[16px] h-14.25 w-78.5 mx-auto shadow-[inset_2px_5px_2px_rgba(255,255,255,0.4),0_15px_12px_rgba(0,0,0,0.25)] mt-10 md:w-full"
+                        onClick={() => {
+                            const emailValido =
+                                /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+                            if (!emailValido) {
+                                setErroEmail("Digite um email válido");
+                                return;
+                            }
+
+                            setErroEmail("");
+                            setMostrarFormulario(true);
+                        }}
+                        className="bg-[#F6B22B] rounded-xl text-[#232126] font-bold text-[16px] h-14.25 w-70 mx-auto shadow-[inset_2px_5px_2px_rgba(255,255,255,0.4),0_15px_12px_rgba(0,0,0,0.25)] mt-10 md:w-full"
                     >
                         Comprar agora
                     </button>
-                )}
+
+                    {erroEmail && (
+                    <p className="text-red-600 text-sm font-semibold mt-3">
+                        {erroEmail}
+                    </p>
+                    )}
+                </>
+               )}
             </div>
 
-            <p className="font-light text-[16px] text-[#4A5565] mt-8 ml-3">
+            <p className="font-light text-[16px] text-[#4A5565] mt-8 mx-auto">
                 Garantia de 7 dias - Se não ficar satisfeito, devolvemos seu dinheiro
             </p>
 

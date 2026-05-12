@@ -3,7 +3,7 @@ import { comoFunciona } from "@/data/sobreContent.js";
 const ComoFuncionaSobre = () => {
     return(
     <>
-        <div className="w-85.5 mx-auto mt-40 md:w-224">
+        <div className="w-80 mx-auto mt-40 md:w-224">
             <h1 className="text-[30px] font-black text-[#232126] text-center md:text-[48px]">Como funciona na prática?</h1>
             <div className="mt-10">
                 {comoFunciona.map((i, index) => {
@@ -19,7 +19,7 @@ const ComoFuncionaSobre = () => {
                 })}
             </div>
         </div>
-        <div className="w-85.5 mx-auto mt-15 text-center mb-10 md:w-208 md: mb-30 md:mt-40">
+        <div className="w-80 mx-auto mt-15 text-center mb-10 md:w-208 md: mb-30 md:mt-40">
             <h1 className="text-[30px] font-black text-[#232126] mb-4 md:text-[48px]">Pronto para Começar seu Tour Gastronômico?</h1>
             <p className="text-[#4A5565] text-[20px] font-light mb-1 md:mb-10">Assine agora e comece a explorar os melhores restaurantes do triângulo mineiro com 50% de desconto</p>
             <button className="bg-[#F6B22B] rounded-xl w-full h-22 flex items-center justify-center font-bold text-[18px] text-[#232126] md:w-90 md:h-15 md:mx-auto">Assinar agora</button>
