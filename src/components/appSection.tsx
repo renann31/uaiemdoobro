@@ -92,7 +92,7 @@ const AppSection = () => {
                     <div className="bg-white w-full h-full rounded-2xl flex flex-col p-6 items-center">
                         <div className="bg-[#12495E] rounded-2xl w-24 h-24 p-3">
                             <Image
-                                src="/assets/iconApp.png"
+                                src="/assets/iconeApp.png"
                                 alt="iconApp"
                                 width={72}
                                 height={72}
